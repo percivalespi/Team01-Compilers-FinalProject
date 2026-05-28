@@ -1,0 +1,128 @@
+Syntax & Semantic Analyzer - Report
+==================================================
+
+Lexical Analysis - Results
+==================================================
+Total tokens found: 69
+
+
+TOKEN TYPE           | LEXEMS
+--------------------------------------------------
+KEYWORD              | int
+IDENTIFIER           | sumar
+PUNCTUATION          | (
+KEYWORD              | int
+IDENTIFIER           | a
+PUNCTUATION          | ,
+KEYWORD              | int
+IDENTIFIER           | b
+PUNCTUATION          | )
+PUNCTUATION          | {
+KEYWORD              | return
+IDENTIFIER           | a
+OPERATOR             | +
+IDENTIFIER           | b
+PUNCTUATION          | ;
+PUNCTUATION          | }
+KEYWORD              | void
+IDENTIFIER           | saludar
+PUNCTUATION          | (
+PUNCTUATION          | )
+PUNCTUATION          | {
+IDENTIFIER           | printf
+PUNCTUATION          | (
+LITERAL              | "Hello World\n"
+PUNCTUATION          | )
+PUNCTUATION          | ;
+KEYWORD              | return
+PUNCTUATION          | ;
+PUNCTUATION          | }
+KEYWORD              | int
+IDENTIFIER           | main
+PUNCTUATION          | (
+PUNCTUATION          | )
+PUNCTUATION          | {
+KEYWORD              | int
+IDENTIFIER           | x
+OPERATOR             | =
+CONSTANT             | 5
+PUNCTUATION          | ;
+KEYWORD              | int
+IDENTIFIER           | y
+OPERATOR             | =
+CONSTANT             | 10
+PUNCTUATION          | ;
+KEYWORD              | int
+IDENTIFIER           | resultado
+OPERATOR             | =
+IDENTIFIER           | sumar
+PUNCTUATION          | (
+IDENTIFIER           | x
+PUNCTUATION          | ,
+IDENTIFIER           | y
+PUNCTUATION          | )
+PUNCTUATION          | ;
+IDENTIFIER           | saludar
+PUNCTUATION          | (
+PUNCTUATION          | )
+PUNCTUATION          | ;
+IDENTIFIER           | printf
+PUNCTUATION          | (
+LITERAL              | "Result: %d\n"
+PUNCTUATION          | ,
+IDENTIFIER           | resultado
+PUNCTUATION          | )
+PUNCTUATION          | ;
+KEYWORD              | return
+CONSTANT             | 0
+PUNCTUATION          | ;
+PUNCTUATION          | }
+==================================================
+GROUPED TOKENS BY TYPE
+==================================================
+KEYWORD (Total: 11):
+    int: 7
+    return: 3
+    void: 1
+
+IDENTIFIER (Total: 17):
+    sumar: 2
+    a: 2
+    b: 2
+    saludar: 2
+    printf: 2
+    main: 1
+    x: 2
+    y: 2
+    resultado: 2
+
+PUNCTUATION (Total: 32):
+    (: 7
+    ,: 3
+    ): 7
+    {: 3
+    ;: 9
+    }: 3
+
+OPERATOR (Total: 4):
+    +: 1
+    =: 3
+
+CONSTANT (Total: 3):
+    5: 1
+    10: 1
+    0: 1
+
+LITERAL (Total: 2):
+    "Hello World\n": 1
+    "Result: %d\n": 1
+
+Total tokens found: 69
+
+
+Syntax & Semantic Analysis - Results
+==================================================
+Syntax analysis: VALID
+Semantic analysis (SDT): VALID
+
+==================================================

@@ -1,0 +1,239 @@
+{
+    "kind": "program",
+    "value": null,
+    "lineno": 0,
+    "children": [
+        {
+            "kind": "function",
+            "value": {
+                "name": "sumar",
+                "type": "int"
+            },
+            "lineno": 0,
+            "children": [
+                {
+                    "kind": "param_list",
+                    "value": null,
+                    "lineno": 0,
+                    "children": [
+                        {
+                            "kind": "param",
+                            "value": {
+                                "name": "a",
+                                "type": "int"
+                            },
+                            "lineno": 0,
+                            "children": []
+                        },
+                        {
+                            "kind": "param",
+                            "value": {
+                                "name": "b",
+                                "type": "int"
+                            },
+                            "lineno": 0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "kind": "block",
+                    "value": null,
+                    "lineno": 1,
+                    "children": [
+                        {
+                            "kind": "return",
+                            "value": null,
+                            "lineno": 2,
+                            "children": [
+                                {
+                                    "kind": "binary_op",
+                                    "value": "+",
+                                    "lineno": 2,
+                                    "children": [
+                                        {
+                                            "kind": "identifier",
+                                            "value": "a",
+                                            "lineno": 2,
+                                            "children": []
+                                        },
+                                        {
+                                            "kind": "identifier",
+                                            "value": "b",
+                                            "lineno": 2,
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "kind": "function",
+            "value": {
+                "name": "saludar",
+                "type": "void"
+            },
+            "lineno": 0,
+            "children": [
+                {
+                    "kind": "param_list",
+                    "value": null,
+                    "lineno": 0,
+                    "children": []
+                },
+                {
+                    "kind": "block",
+                    "value": null,
+                    "lineno": 5,
+                    "children": [
+                        {
+                            "kind": "print_stmt",
+                            "value": null,
+                            "lineno": 6,
+                            "children": [
+                                {
+                                    "kind": "literal",
+                                    "value": "\"Hello World\\n\"",
+                                    "lineno": 6,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "return",
+                            "value": null,
+                            "lineno": 7,
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "kind": "function",
+            "value": {
+                "name": "main",
+                "type": "int"
+            },
+            "lineno": 0,
+            "children": [
+                {
+                    "kind": "param_list",
+                    "value": null,
+                    "lineno": 0,
+                    "children": []
+                },
+                {
+                    "kind": "block",
+                    "value": null,
+                    "lineno": 10,
+                    "children": [
+                        {
+                            "kind": "declaration",
+                            "value": {
+                                "name": "x",
+                                "type": "int"
+                            },
+                            "lineno": 11,
+                            "children": [
+                                {
+                                    "kind": "constant",
+                                    "value": "5",
+                                    "lineno": 11,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "declaration",
+                            "value": {
+                                "name": "y",
+                                "type": "int"
+                            },
+                            "lineno": 12,
+                            "children": [
+                                {
+                                    "kind": "constant",
+                                    "value": "10",
+                                    "lineno": 12,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "declaration",
+                            "value": {
+                                "name": "resultado",
+                                "type": "int"
+                            },
+                            "lineno": 13,
+                            "children": [
+                                {
+                                    "kind": "func_call",
+                                    "value": "sumar",
+                                    "lineno": 13,
+                                    "children": [
+                                        {
+                                            "kind": "identifier",
+                                            "value": "x",
+                                            "lineno": 13,
+                                            "children": []
+                                        },
+                                        {
+                                            "kind": "identifier",
+                                            "value": "y",
+                                            "lineno": 13,
+                                            "children": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "func_call",
+                            "value": "saludar",
+                            "lineno": 14,
+                            "children": []
+                        },
+                        {
+                            "kind": "print_stmt",
+                            "value": null,
+                            "lineno": 15,
+                            "children": [
+                                {
+                                    "kind": "literal",
+                                    "value": "\"Result: %d\\n\"",
+                                    "lineno": 15,
+                                    "children": []
+                                },
+                                {
+                                    "kind": "identifier",
+                                    "value": "resultado",
+                                    "lineno": 15,
+                                    "children": []
+                                }
+                            ]
+                        },
+                        {
+                            "kind": "return",
+                            "value": null,
+                            "lineno": 16,
+                            "children": [
+                                {
+                                    "kind": "constant",
+                                    "value": "0",
+                                    "lineno": 16,
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

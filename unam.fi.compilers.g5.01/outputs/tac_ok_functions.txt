@@ -1,0 +1,30 @@
+
+sumar:
+  BeginFunc
+  RecvParam a from Reg[0]
+  RecvParam b from Reg[1]
+  t0 = a + b
+Return t0
+  EndFunc
+
+saludar:
+  BeginFunc
+PRINT_FMT "Hello World\n"
+CALL_PRINT
+Return
+  EndFunc
+
+main:
+  BeginFunc
+  x = 5
+  y = 10
+  Param x
+  Param y
+  t1 = Call sumar, 2
+  resultado = t1
+  t2 = Call saludar, 0
+PRINT_FMT "Result: %d\n"
+PRINT_ARG resultado
+CALL_PRINT
+Return 0
+  EndFunc
