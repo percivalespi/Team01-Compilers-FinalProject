@@ -38,7 +38,7 @@ python -m streamlit run unam.fi.compilers.g5.01/ui/app.py
 
 #### Terminal Version
 
-If run the program in the terminal, the file must be located in the `inputs/` directory. For example, if you have an input file named `ok_optimized.c`, you can run the program like:
+If run the program in the terminal, the file must be located in the `inputs/` directory. For example, if you have an input file named `ok_functions.c`, you can run the program like:
 
 ```bash
 python unam.fi.compilers.g5.01/src/main.py ok_functions.c
